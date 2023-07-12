@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> VR Clone </title>
+  <style>
+    .summary-box
+    {
+      height:220px; 
+      background-color: beige; 
+      padding-top:5px; 
+      width:1210px; 
+      display:grid;
+      grid-template-rows: 70px 70px 80px;
+
+    }
+
+    .summary-box-whitespace
+    {
+      height:220px; 
+      background-color: white; 
+      padding-top:5px;  
+    }
+
+    .investor-name
+    { 
+      padding-left: 20px;
+      width: 100%;
+      font-weight: 500;
+      font-size: 40px;
+    }
+
+    .header
+    {
+      display:flex; 
+      flex-direction: row; 
+      background-color: #1c509d; 
+      position:fixed; 
+      top:0; 
+      right:0; 
+      left:0; 
+      height:60px;
+      color: white;
+      font-size: 35px;
+      padding-left: 175px;
+      padding-top: 15px;
+    }
+
+    .blue-dropdown
+    {
+      background-image: url("Blue-dropdown-arrow.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      border-radius: 100%;
+      height: 24px;
+      width:24px;
+      background-color: white;
+      border: 0;
+    }
+
+    .blue-dropdown:hover
+    {
+      opacity: 85%;
+    }
+
+    .more-features
+    {
+      height: 40px; 
+      background-color: #1c509d; 
+      color: white; 
+      width:200px;
+      font-weight: 700; 
+      font-size: larger; 
+      border-radius: 8px;
+    }
+
+    .more-features:hover
+    {
+      opacity: 85%;
+    }
+
+    .change-investor
+    {
+      padding-top:15px; 
+      width: 1210px; 
+      padding-bottom: 10px; 
+      top:50px;
+      display: grid;
+      grid-template-columns: 370px 320px 500px;
+    }
+
+    .dashboard-buttons
+    {
+      background-color: beige;
+      border:0;
+      height: 30px;
+    }
+
+    .dashboard-buttons:hover
+    {
+      text-decoration: underline;
+    }
+
+    td,th
+    {
+      text-align: center;
+      border-bottom: 1px solid lightgray;
+      border-collapse: collapse;
+      padding-top: 25px;
+      
+    }
+
+
+    
+  </style>
+</head>
+
+
+
+<body style=" padding-top:60px; display:flex;justify-content: center;height: 3000px;">
+
+<div class="header">
+  Mutual Fund Analytics
+</div>
+
+<div style="display: grid;grid-template-rows: 220px 1000px;">
+  <div style="display: grid;grid-template-columns: 154px 1210px 155px;padding-top: 8px;">
+    <div class="summary-box-whitespace"></div>
+
+    <div class="summary-box" >
+      <div class="change-investor">
+        <div class="investor-name">
+          Investor Name Demo
+        </div>
+    
+        <div style="padding-left: 10px; width: 100%;padding-top: 14px;" >
+          <button class="blue-dropdown"></button>
+        </div>
+    
+        <div style=" text-align: right;width:500px;padding-right: 20px;padding-top: 5px;">
+          <button class="more-features">
+            More Features
+            </button>
+        </div>
+      </div>
+    
+      <div style="display:grid;grid-template-columns: 605px 605px;margin-top: 10px;">
+        <div style="display: grid;grid-template-rows: 20px 50px ;">
+          <div style="font-size: 15px;color: gray;font-weight: 500;padding-top: 5px;padding-left: 20px;">
+            CURRENT VALUE
+          </div>
+          <div style=" padding-left: 20px;">
+            <p style="display: inline-block;font-size: 35px;font-weight: 500;margin: 0;">
+              &#8377 3.60 Lakh
+            </p>
+            <p style="display: inline-block;font-size: 20px;font-weight: 300;margin: 0;padding-left: 10px;">
+              &#8377 1.76 Lakh Invested
+            </p>
+          </div>
+        </div>
+    
+        <div style="display: grid;grid-template-rows: 20px 50px ;">
+          <div style="font-size: 15px;color: gray;font-weight: 500;padding-top: 5px;padding-left: 20px;">
+            ALL-TIME RETURNS
+          </div>
+          <div style=" padding-left: 20px;">
+            <p style="display: inline-block;font-size: 35px;font-weight: 500;margin: 0;color: green;">
+              &#8377 +1.97 Lakh
+            </p>
+            <p style="display: inline-block;font-size: 20px;font-weight: 300;margin: 0;padding-left: 10px;color: green;">
+              11.9 % p.a.
+            </p>
+          </div>
+        </div>
+    
+      </div>
+    
+      <div style="padding-left: 20px;">
+        <div style="padding-top: 45px;display: inline-block;">
+          <button class="dashboard-buttons">Dashboard</button>
+        </div>
+    
+        <div style="padding-top: 45px;display: inline-block;padding-left: 10px;">
+          <button class="dashboard-buttons">Overview</button>
+        </div>
+    
+        <div style="padding-top: 45px;display: inline-block;padding-left: 10px;">
+          <button class="dashboard-buttons">Performance</button>
+        </div>
+    
+        <div style="padding-top: 45px;display: inline-block;padding-left: 10px;">
+          <button class="dashboard-buttons">Analysis</button>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="summary-box-whitespace"></div>
+  </div>
+  
+  
+  <div style="background-color: beige;height: 100%;margin-top: 70px;display:flex;justify-content: center;">
+  <div style="margin-top: 70px;background-color: white; height:280px; width: 1210px;border-radius: 12px; ">
+    <table style="width: 100%;">
+      <tr>
+        <th>Fund Name</th>
+        <th>ISIN</th>
+        <th>Last NAV</th>
+        <th>Total Cost</th>
+        <th>Current Value</th>
+        <th>Units</th>
+        <th>Total Returns</th> 
+      </tr>
+
+      <tr >
+        <td>AXIS</td>
+        <td>ISIN2023004</td>
+        <td>3000.2</td>
+        <td>400000000</td>
+        <td>2000.567</td>
+        <td>3</td>
+        <td>5000000</td> 
+      </tr>
+
+      <tr >
+        <td>AXIS</td>
+        <td>ISIN2023004</td>
+        <td>3000.2</td>
+        <td>400000000</td>
+        <td>2000.567</td>
+        <td>3</td>
+        <td>5000000</td> 
+      </tr>
+
+
+    </table>
+  </div>
+  </div>
+</div>
+
+
+</body>
+</html>

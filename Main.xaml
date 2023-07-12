@@ -1,0 +1,290 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="789.6,2893.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="96">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.Python</x:String>
+      <x:String>UiPath.Python.Activities</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="76">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="604.8,2828.8" sap2010:WorkflowViewState.IdRef="Sequence_12">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Net Asset Value of Mutual Funds | Nav History Download" sap:VirtualizedContainerService.HintSize="542.4,2716.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="94171396-f3eb-4ffc-8f94-673c92b2563a" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,2500" sap2010:WorkflowViewState.IdRef="Sequence_11">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="dateCurrent" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="94171396-f3eb-4ffc-8f94-673c92b2563a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.amfiindia.com/nav-history-download" DesignTimeRectangle="863, 599, 39, 34" DesignTimeScaleFactor="1.25" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl parentid='navhistorydownload' tag='TABLE' /&gt;&lt;webctrl class='ui-button-text' tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='navhistorydownload' tag='TABLE' /&gt;&lt;webctrl class='ui-button-text' type='' tag='SPAN' aaname='' /&gt;" Guid="a17e8573-2dfc-4d46-950f-4968b3429bfd" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACsAAAAmCAYAAABdw2IeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOoSURBVFhH7Zi7a1RBGMWvYqWdWFjaWGjnX2CnYCGIduJfYGfhP2BtbSNWYjDGV4gGNBiTuEEJUURFdrPZ3ST73uwz+37kc86wJ4zXe6OBO0sCfnAIJJu5vzlz5pu741QqFTkoOliw4XBYoGg0GrhWVlYkEolo8TmpVEpyuZxsbm56Au0mZ319XaB0Oh2IAEMlk0k99tramsTjcVldXRVOAr8HcLlc9gTzklMoFAQqlUqBqlgsahiMDSez2ayezMbGxg58LBbTE8JnvODccmq1mkD1ej1wbW1t6bGr1ap2EBMAGMABSWi4nM/nPQFNOa1WS6BOpxO42u22FsZvNpt6AgQHdCaT0aCJRGIHeLdYOP1+X2yr1+tJt9vVEwB4o9HQjiMuiAhchsOICCPpCbu9vS2QjeLYg8FAi+CEhtNwEo5iQyLD+OmXYWc4rpUirB80IgKXAQJA5hjx8IqDVVh3uaEJTIcRCUQB0F4bbqSwKLfTAEYk0DmQVbgKWLQ5t7sjhzULwIgENh+6BTYd4sADBa1uX8HSXWw65JfuwlnEYl/BEhjuIg7ow+wOyG9gsPl2S+78+CbXFhfkwtw7X11UuhKal+lMWlpq2c0iLOIAd5FdHNNwN1DYkhr8fiwqZ6an5ND4I3F8dOTJmFyan5WZbEa6CsxdpruIAjYWjmScaoHB9tQDsq2mXP8YkhMvJnxBT04+kwdqUslmY/ifv5eZXWw0gCEK2GSBwbIeJuJyfnbG093jzyfk8oc5iateOlBQXuWGRW55SAQOW1RxuP31ixx7+vgP2HNvpuV9Pid1BQIorzJhzU1mBRZxeJVO6U1kgp6aeim3vixLVWWx7wOK8nMWHSFwWFRaPeReNKLzeXh8TGf1amhBZnPZ4Sf8yy+z6LVWYJHHz6Wi3Pi0KEdVHE6/npS74Z9SU67+rQhrdgPAWj0Uyiq7b1V7Oqta2c3lJQkV8sO/+BdAIbPP4pgFrPXjttLtqIPiuyypB7VdB4C7CEpXubmQV8CaoFZgsZEyqvc2VP78WhWLoHSV7waA9fqqHjjsXorLT1fx1gVIyOurzchhufR0FR3AfAGHq8iq+1125LAmJEG5/MwqQH2/MA7HsVKmiyYolp6gPAR4IeLlKDUSWDpJSGaU9whwkzndFdYcyJYICCcBiWXnvQGXfTdIysEANuW+kUHTh5uAI+S/gEIOZmlDAKPMOy+6iWXfCyhk7TKZzplw+LlXQFP/r+lt6QDBVuQX9dxzRaX2+5oAAAAASUVORK5CYII=" InformativeScreenshot="586898c1574b1cfffc3afcaf982c3029.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Net Asset Value of Mutual Funds | Nav History Download' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="637, 597, 264, 35" CvTextArea="653, 605, 164, 16" CvTextArgument="--Select Mutual Fund--" CvType="InputBox" DesignTimeRectangle="637, 597, 254, 38" ElementType="InputBox" FriendlyName="'--Select Mutual Fund--'" FullSelectorArgument="&lt;webctrl parentid='navhistorydownload' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='navhistorydownload' tag='TABLE' /&gt;&lt;webctrl type='' tag='INPUT' class='custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left ui-autocomplete-input' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAP4AAAAmCAYAAADk+yYTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAfbSURBVHhe7Z29bxxFGMYDooIOUVDSUEDHX0AHEgUSgg7RuqGjoIyL1NQnS4gKERHCV2RjCSJCEhyBojhCEBE7ju0k9t3Zjj9j3/kjzss8s/PuzszO3u5edpMzfh/pUe72ZmZn797fvDOzd86JjY0NEovFx8sCvlh8DF0a/LW1NWq323Tnzh26ffs23bp1i6ampujmzZvaeCwWi8t5ZmamcoPN6elpbT7P4uIiLS0tFQN/fX2dVlZWaGFhgebn52lubo5mZ2f1v3iOQeDu3bv6X34sFouLu9lsVmKAzQavaBtMglUkah4QcsG/f/8+tVqtuDKMx2gUJ8JrGEHg5eVlPUCIxeJyxky6Sq+urmp20TbYxCwdvN67d0/zmwl+KMvzyISG0ChOgHIov7m5SVtbW2KxuA9vb29X7gcPHui2wSY4xWAApjEIBMEH0CgA0DnDA3hkdLyGhtAoGu90OtrdblcsFvfpvb29yr27u6uN9sEoeOVBIAg+oAfsWMdjaoAMj9EClVCZO7q/v08HBwfaDx8+FIvFA2jwCVbBLNjd2dlJg48pPDYGkOkxzUeWxwiBDI9RwwYejR4eHmo/evRILBb36TrEbTOjPAiAYQd8AM636pDpAT2OI8tjyuADb3ccFolEgyOfT3sAcMDHFB/Znqf3GAhs6H3gRSLR0ZE9ADjg83Y/btFhE4+h5yxfBfDN0WEaGhpyPTJpXi2jSWqousOjTfO8IrXGaPjkGPVqNb6GnH5H5YZprGUOFNTkyBA1+nlL8jTZyO0Pzp36fCzX0q+A+n3vRL3FDMfgY/MOa3pkfGR+bORhIwCZnrP84yoKqoZC1lYEcPp4nuoBX/exEPjDaoDIPn8ywJUMXgw8dQFWGPyyn0X1EvDrVQw+1vaAnqf42PnDJoA9vX8s9QrovoL96YM/NqpACpZt0tjJYWqM9BG8Ar6WgF+vYvD5m3jI9rjpj2xvT/EfWyagi4MKeBCEiV0YQuDn1YmUZOPIURvF6kJJUKIPgeDEtaplgB+80fOMGQ+WDRpMqw96UDH98pcVpqzTR/Me2204709l4BfrU3y9Xr9CMRCdl91Qg6r73omqVQw+vqxjr+0rzfZaFlg5GVWFQQSDXS4V6D74ReqoQzrArIDyBqRSGb8VXZMfyHgd5ywNPmT6k/S5IPipekp+Gf38SYPvvp98LHV99jlNOwJ+by3vdunUjb/pgyuX6a2Lv2b6beX3Ji7RuIrXrmIacsDHNB+Pcb+ed/GrgZ5lgtyzE6xKPjAsNyhd8AvVCcGhpOua4CwHvls3EgI5Op/fp+i5D1U14If77dUtDH7YZfvkX38k93Pz67DCdUW21lRy/nx2hl4bH6VnznxFJzL83Den6Z1LF+h8u0X7KpFDMfh83x6begAf0/zqsn1AJsCTwGIgTFCF4HMC1w6ggnWKBn4J8KPrsNrEOQwQTxJ8R+a12KXB9/voqwz44et1B+zA+Qr09bjrQPHZ7nbowz8m6KUfzmZC//K57+gLNUAsdHZMTW+Nb6/vc6f5KXCjDzOdMfKCiD98VVYHkgkqpw3bHAwB8FNl2VEdH8SQSoNvzs2BjPpZGS8c5BWB730ezvsygOBz3czzWQNq1A7KsXHctGPb788x0Zfzc/TmhfPBrP/i92fp3d8v0pxavh9aLAfBx717nuZXlfF7A2UCSb+eEVQpBcDPqeODGFJ58M1zXQd9SoI4WK4W8O33z5ZXdwDBD5dRKtBXUaRVNeX/9K/r9MK3X6fAf+PncfpteYm21QzeZjkGHzv6+J5+XeD7QeHKDaSsYHCP2+AXrJOCysgKsn7Aj7MTbu9ZMPjlgn3kTM31CoIftcXlvMGD5bddM/hunzKu1+9rRlz4750oW5jyjzUX9QaeDf0roz/SJ9ev0Sb26zyOg+Dzrbyq1/hRUKU/5HSwmeCwATRBzKBzGf957zp8Ljug3EAMB6urdFAaEFQ79rWlyqX6k9RLIPKvK7ud5Hzcjt3vQNuVgV+kT1wmB3yl1Dnjtnr3VZSo2elQY2Zar+efPXNar+3fn7hMF5bapoSrGHzcysNUH495V7+WzT0zwju2giCRFbjG7oCRBiS/TqQoIJMyThtWALttJ0oFvVIImFA5//obk6bPKRDc9pJj5rjpZ3J94Wt3+lUh+FBen4qCD7ltqT5i9iTgFxbW75Nrq/TRn1foeTXlf/Wnc/TZ1L+0pTgOKQYfO/r8azx8a8++nVc5/CKRqHKtq7X+L+0WvT4+Sh9fu0oTK8vmlbRi8PHFHYCP7+zjt/f845xab+mJRKJKtbG/R6du/ENXFce7KnFnKQYf388H+Fjn43mt032RSFSLsInX6nZoB0m7B7cx+DD/ZU5kf8n6ItH/Vw74Nvx4HPqFngwAItHRFTOcCT6v9fk3+T78MgCIREdLzC04ToEP83ofU36+rx+CXyQSDa6YU9vgFxxngg/ocV+f4cdmH6/5YZkBiESDLRt2Bh7sIokHwYcZfkz58S//Jxo8AKAyDwBsPoFYLC5nm6OqzbBjvw6z9+Df1ffNAwCMx8j++EMdGADQCAYBNCgWiwfP4BOcgldwi+SNJJ4LPpuzP4wBgGcAMBpkYzQRi8VP1zaTYBQJG8wyx4XBZ/tLAB4I2KE6YrH4yZo5ZUb5Th1zWhp8sVh89C3gi8XH0AK+WHzsvEH/Aeigbg2atCrkAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'All'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="94171396-f3eb-4ffc-8f94-673c92b2563a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.amfiindia.com/nav-history-download" CvElementArea="626, 637, 420, 184" CvTextArea="635, 643, 18, 13" CvTextArgument="All" CvType="InputBox" DesignTimeRectangle="629, 633, 412, 39" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'All'" FullSelectorArgument="&lt;webctrl id='ui-id-3' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ui-id-3' tag='A' type='' class='ui-corner-all ui-state-focus' aaname='All' check:innerText='All' /&gt;" Guid="edbf4eaa-a533-4619-a4b4-af3290061234" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAaAAAAArCAYAAAA+Nlz2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHISURBVHhe7dtNbuJAEIDRnLaXOQIcA+UCsxhpsgrXYJcrkCz4PUEnbmMDHlrK2JJrMe9JJTDIS+uTTfF0Op3yT+d4PObD4ZD3+33/2nzWzaNzjDHzT3etdtfpbre7u14fnWPM3FMC9PT7lzHGGDPvdAECgDmcz+cyAgTArAQIgBACBEAIAQIghAABEEKAAAghQACEECAAQggQACEECIAQAgRACAECIMTkAG1eUk4p5eXb9vLJ1fZtmdNincs3H+u8TMu8/ihfAfCfmxigTV418Vl8hyatvo/uCRAANdMCtFm14SlxSXk1KJAAAVAzIUDbvF6knF6a6ty+vxIgAGrGB2h419PdDV0OGwIEQM3oAN3Fpbj8HnSzjCBAANSMDFD7yG24+VY24m6iJEAA1IwLUHnc1q5f/z3XyAgQADWjAjS807lqH8N1ywgCBEDNiAC1kRmuXHfaP6a2ywgCBEDNPweoROXBn057JTRtoAQIgJo+QM3Bz5cQAGAaAQIghAABEEKAAAghQACEECAAQggQACEECIAQAgRACAECIIQAARBCgAAIIUAAhBAgAEIIEAAh+gA9v/4RIABm0wfo/fNTgACYTRugc/4C/keq+ZCLsb0AAAAASUVORK5CYII=" InformativeScreenshot="9e406497e70c4858923f6a0a1a63e166.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Net Asset Value of Mutual Funds | Nav History Download' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvType="InputBox" DesignTimeRectangle="628, 599, 250, 34" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl parentid='navhistorydownload' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='navhistorydownload' tag='TABLE' /&gt;&lt;webctrl type='' tag='INPUT' class='custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left ui-autocomplete-input' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAP4AAAAmCAYAAADk+yYTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAASmSURBVHhe7Z1LbxtVGIYLYgU7xIIlGxaw4xewA4kFEoId4hewY8Ef6Jo1G8QKUVHKrQpEgorQllSgqlQIKnJx4lx9S+xcfYlz+ZhnlG84dsZq3RqYcd5XepRJbJ9k85zvO+eMnQvb29smhDhfSHwhziFDi99oNKxSqdjy8rItLCzY/Py8zc7O2szMTAzXQojhKRQKIwc/5+bmYvgdKysrtr6+/mDib21t2cbGhq2trdnS0pIVi0VbXFyMv/I9kwAD8tWvhRDDUSqVRgJiOzjL2HiJrxRrJoT7ir+5uWnlcjl5IXDNgPwSHqtWqzG1Wi2eIIQQw0M3PUrq9XrsL2PjJ506zq6urg4WP63K+6zEIAzI4DyP5+/s7Nju7q4Q4iHZ398fOXt7e/HY+ImrTAZ4nSo+QvMgonuFR3gqOo8xCAMycKvVimm320KIR+Dg4GDkdDqdGMbHU5zF31TxkR7ZWcfTFlDhmSl4AS/0P7Lb7drh4WHM0dGRECKj4Ci+4i3+nhGfFp5NASo9bT5VnhaBCs+MEQrPgMfHxzEnJydCiEfg34iP7Z76JNAjPoL7UR2VHun5OVWedqFf+PCPBkVRspV+R30C6BGfFp9q7+09E0Eofb/wiqLkK+5uj/i+1c8RHZt4Lr1XeQmvKPlPj/hs3rGmp+JT+dnIYxOASu9VXlGU8UgiPmt7pPcWv9lsxht5YXuvKMp4JBHf78Sj2nPgT7UPW3xFUcYnifjcrBOu7VXtFSX7qXXadvHeH/bWrZv2yvUfB/JqxBvTN2yyXLJ25HWP+LT5XHNe77v4kl5RsptGVKA/WizYC5MT9tjlT+3CAJ74/JK9dmPKrlXK1g2P8/zcnk09xKfNV7VXlGznMHK00m7Z279M2zNfXxko/bNXv7SPowlirdWMX9ezxg/X92rzFSU/+WSpaC9PXUut+k9/dcVe//m6FaMl/PGpz6nic3bvbb7EV5Tspx61/O//ftee+uKzM+K/9P2k/VSr2n7UxbvPifjs6HOfvsRXlPyFlv/b0nq8gRdK/9zEN/be3Tu2w55d4HKq+H6Up1ZfUfKTUqtlHxbm4vX845cvxWv7N6dv2lS1cvqMf5KIz1EerT7Xvqsv8RUlP2H9/lujbu/8esuejFr+57+7ah/M/mW7kcv9ScRnR9/fjcdde+FxnuRXlHxkK1rr/1Ap24uTE/bunds2vVE7faQ3ifjcuIP43LPPe+/9zTmq+oqSr2x3D+zivT/tduRyJyreaUnE5/58xGedz/dq9xUln2ETr9xuWZPCPcDdRHzwT+Wk+qvqK8r4pkf8UH6u096hpwlAUfIdHB4ovq/1/T35/fJrAlCU/MXdPSM++Hqflt/P9dPkVxQl23FXQ3B4oPhIz7m+y89mn6/5QR2AomQ/oeyAt/ibKj64/LT8fPV/ouETAB2ATwCODy6EGJ7QpVGDqzg78HP1+/EJALim+vNBHUwADMAkwGBCiGyCo7iKs7hLAb+v+I5Xf2AC8A4AGMzhJEAI8f8TeomnFG13+YHFd/qXAD4ROGmvEUL897ir7qmf1vHzRPzwrXxCiDEnFF9RlPMRia8o5y5mfwMabwOk9Sc7LQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="94171396-f3eb-4ffc-8f94-673c92b2563a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.amfiindia.com/nav-history-download" CvElementArea="1082, 598, 266, 35" CvTextArea="1101, 605, 105, 18" CvTextArgument="-Select Type--" CvType="InputBox" DesignTimeRectangle="1309, 599, 39, 34" DesignTimeScaleFactor="1.25" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl parentid='navhistorydownload' tag='TABLE' /&gt;&lt;webctrl class='ui-button-text' parentid='divNavDownType' tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='navhistorydownload' tag='TABLE' /&gt;&lt;webctrl class='ui-button-text' parentid='divNavDownType' type='' tag='SPAN' aaname='' /&gt;" Guid="7f8fa4a8-e9bb-44d7-9c1d-16048ade8417" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACsAAAAmCAYAAABdw2IeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOrSURBVFhH7ZhLaxRBFIVbcaU7ceHSjQvd+QvcKbgQRHfiL3Dnwj/g2rUbcSUGY3yFaECDMYkTlBCDqMhMJjOTZN6TeWbej1zrFHNC2XYTA115gBcOA8lM9VenTt3qbqdSqchh0eGCDYfDQkWj0cC1vLwskUhEC9dYW1uTVColuVxONjY2PKH85ODHVDqdDkSAoZLJpB57dXVV4vG4rKysCCeBvwO4XC57wrnlFAoFoUqlUqAqFosaBmPDyWw2qyezvr6+DR+LxfSE8B0vQFNOrVYTql6vB67NzU09drVa1Q5iAgADOCAJDZfz+bwnJOW0Wi2hOp1O4Gq321oYv9ls6gkQHNCZTEaDJhKJbWC/WDj9fl/2Qr1eT7rdrp4AwBuNhnYccUFE4DIcRkQYyb9gt7a2hLJRHHswGGgRnNBwGk7CUWxIZBifXhl2hmNaK9MML2hEBC4DBoDMMeLhjoN1WHe5oQlMhxEJRAHQ7g2357Aot9MARiTQOZBVuApYtDnT3X2BNQvAiAQ2H7oFNh3iwAMFre5AwdJdbDrkl+7CWcTiQMESGO4iDujD7A7Ib2Cw+XZL7v38Ljfm5+TSzAdfXVa6FpqVyUxaWmrZzSIs4gB3kV0c03A3UNiSGvxhLCrnJifkyOgTcXx07NmIXJmdlqlsRroKzF2mu4gCNhaOZJxqgcH21AWyrabc/BySU6/GfEFPj7+QR2pSyWZj+Ms/y8wuNhrgEAVsssBgWY8Tcbk4PeXp7smXY3L104zEVS8dKCivcsMitzwkAoctqjjc/bYkJ54//Qv2wrtJ+ZjPSV2BAMqrTFhzk1mBRRzepFN6E5mgZyZey52lRamqLPZ9QFF+zqIjBA6LSquLPIhGdD6Pjo7orF4Pzcl0Ljv8hn/5ZRa91gos8vi1VJRbX+bluIrD2bfjcj/8S2rK1Z2KsGY3AKzVQ6GssvtetafzqpXdXlyQUCE//I9/ARQy+yyOWcBaP24r3Y46KH7IgrpQ23UAuIugdJWbC3kFLEGtwWIjZVTvbaj8+bUqFkHpKu8NAOt+VLcCu5vi8tNV3HUBEnI/2uwLLJeerqIDmDfgcBVZNe9l9wXWhCQol59ZBajnA+NwDGtlumiCYukJykOAL0Tcju45LJ0kJDPK9whwkzn1heUgHMiWCAgnAYll53sDLrsfJOXgx7blfiODpg83AUfInUAhBzO0JYBRfOeFi9JNLPu/gkJWXybTORMOn7sBNPX/Nb0tHSLYivwGXJN3d/7nXAIAAAAASUVORK5CYII=" InformativeScreenshot="36e1c75716b10cd61d09f98ece679f32.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Net Asset Value of Mutual Funds | Nav History Download' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="1082, 598, 266, 35" CvTextArea="1101, 605, 105, 18" CvTextArgument="-Select Type--" CvType="InputBox" DesignTimeRectangle="1085, 599, 250, 34" ElementType="InputBox" FriendlyName="'--Select Type--'" FullSelectorArgument="&lt;webctrl parentid='navhistorydownload' tag='TABLE' /&gt;&lt;webctrl parentid='divNavDownType' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='navhistorydownload' tag='TABLE' /&gt;&lt;webctrl parentid='divNavDownType' type='' tag='INPUT' class='custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left ui-autocomplete-input' aaname='' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Open Ended Schemes'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="94171396-f3eb-4ffc-8f94-673c92b2563a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.amfiindia.com/nav-history-download" CvElementArea="1074, 630, 250, 192" CvTextArea="1079, 673, 152, 17" CvTextArgument="Open Ended Schemes" CvType="InputBox" DesignTimeRectangle="1076, 666, 248, 32" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Open Ended Schemes'" FullSelectorArgument="&lt;webctrl id='ui-id-148' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ui-id-148' tag='A' type='' class='ui-corner-all ui-state-focus' aaname='Open Ended Schemes' check:innerText='Open Ended Schemes' /&gt;" Guid="3bb73a3b-bfce-4c7d-b3a3-33695dd0674c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPwAAAAkCAYAAACtxlclAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAN8SURBVHhe7ZnbcaswEIZTrcuIy2DcwHnIs2mDMpwyOKAL7A1J2LFxsv83o4m5iV1pP4Hjj3Hi4+vf/AcA8EfJjkN4ABwA4QFwBIQHwBEQHgBHQHgAHAHhAXAEhAfAERAeAEdAeAAcAeEBcASEB8ARO4Ufxu50Gk+0XYZ07Fhu1zOPS7TukTC/+/F8Oo/9d9q+gxDfZz/e0rbJ0D0Ud9M9gGvahU/FeL7ychouc2F201JwLE8t9hcIHxcsMY7hvnrMt4DwoEaj8PHJvvW0CdIfXGi/W/jb2H/aYu/JC8KDGk3CVwtJCBEWgEsfinh5PZWv/unpZR7P/Q38nNLrbWuxx9iG9GaSmrxOxNZdeX4z7HpjMQjxLMe7sS/GF4Vv+3qUzjXuncegL+WmrqdvFWlhD/nm47F/lk9lvFQe8qtKU57gGTQJnyXZhj+hsgzrEysW0rIdCoBKIgo+FxAprFhw218ddgk/9b0uHiK2je01XkNOmY+5zfNRMCno2FDSvTfGJUu5xi5jlbnx6/NxOs4/M5f0eLz+of+pgLtpFp4WiSZOcj4nFIks7lAYsZDM/mhhJOFZUajC4eRiNxuJxYot7EsFai4ctKhDHHrhWfvgY5Exx0SRZGHxk3s1jQGPjeUz56FioPHqBYHOW0TPdXEu1YIAjuR5T3h5/lIEVlHnRqUSRdJS7FWh7NjovnLs0+dQwDle0cJ19hOsNT5GvhcV1lhsMtY96L7wmcZLGhWexV4UvmEu5TlybMFLaRK+WqxCxrI0xlNE8sbCR2m2pZt6+DnhZ+gT8kHhQ27FGPYK3zCXlNDXFMPcIP4hNAlvFgJBFpJZWEvhpBW/NOEHCm/2o6TbjoMLsVKUrdQnzfuOMaD7wue9i9UybxmaX8NcWqg+watoFH4iTNJGIYvJi/voueJJkPqihcWK8UDhVaxpW72isntZ+ZFYU77b8aU+DQl4bIZgZFxqwi+5qOvzXMTj7cJP1OZSjsWENQfgNbQLH8iFSZoxcXFC+c9yq0CJLMHSSFHdKzzrj7d8/7rwM1ny2PTPcnocyvnVfpaLWDmoftW917jqws/w3Oa2ynqH8DOluZxQeVXGATyPncK3gRUcgPcEwgPgCAgPgCOeIjwA4D2B8AA4AsID4AgID4AjIDwAjoDwADgCwgPgCAgPgCMgPACOgPAAOCI6Po7/Adx3g8ct9CSkAAAAAElFTkSuQmCC" InformativeScreenshot="bf8677b92bd6d3f614db05f568879bfd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Net Asset Value of Mutual Funds | Nav History Download' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvType="InputBox" DesignTimeRectangle="1075, 599, 250, 34" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl parentid='navhistorydownload' tag='TABLE' /&gt;&lt;webctrl parentid='divNavDownType' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='navhistorydownload' tag='TABLE' /&gt;&lt;webctrl parentid='divNavDownType' type='' tag='INPUT' class='custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left ui-autocomplete-input' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAP4AAAAmCAYAAADk+yYTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATrSURBVHhe7Z07bxxVGIYDooIOUVDSUEDHL6ADiQIJQYdo3dBR8AdSU9MgKkRECLfIYAkiTBIcEUUhQhDhy9rr697sXa8ve/H68jHPyN9wdj0bX7Tgnfh9pFc7jnfOunnO950zM5tL9XrdFEW5WJH4inIBc2rxa7WalUolW1hYsNnZWZuZmbGpqSmbnJyMw7GiKKdLLpcbeHBzeno6jn/OysqKlcvlk4m/vr5uq6urtry8bPPz85bP521ubi5+5WcmgcXFxfjVjxVFOXkKhcJAgtgefGVsnMRVCrVPCMeKv7a2ZsViMTmZcMygfBC/YwYhlUolniAURTld6KQHmWq1GrvL2LhJl46vS0tLsb99xU+r8j4zMRCD8gG8j/dvbGzY5uamoihnyPb29sCztbUVj42beMpkgNNMAqniIzRvQHSv8AhPRed3DMSgDN5sNuO0Wi1FUc6YnZ2dgafdbsdhfBzFV58EUsVHemRnHU9rQIVntuAkTvY/tNPp2O7ubpy9vT1FUYYw+ImrOIu7jUbjqPi08GwMUOlp86nyzBBUeGaNUHgG3d/fj3NwcKAoyhnzX+Bju6M+CeBwl/gI7pfqqPRIz79T5WkZQuFHRka6/nAihBgeev0MJ4Au8Wnxqfbe3jMRhNJ7hWcQxBdCZIdwAugS37f7uUTHJp5L71XeTwSJL0T2cIcT8dm8Y01Pxafys5HHRgCV3qt8iMQXIrsk4rO2R3pv8dn5YxMgbO9DJL4Q2SUR3+/Eo9pz0Z9qH7b4vUh8IbJLIj4364Rr+0dVe5D4QpwvlXbLLj/80965c9teu/lz37we5a2JWzZWLFgrchq6xKfN55jr9b6LnyY9SHwhzpdaVJw/mcvZS2Oj9sTVz+1Snzz15RV749a43SgVrRMVckjE9+v2bOohPm1+v2oPEl+I82U38rPUatq7v03Yc99e6yv989e/tk+jCWK52Tg8s2eNH67vH9Xmg8QXYjj4bD5vr47fSK36z35zzd789ablo+X7fuByqvhcu/c2X+ILMdxUo5b/wz8e2DNffXFE/Fd+HLNfKmXbjjr40OVEfHb0uU9f4guRLWj5vy+sxBt4ofQvjH5nHzy4bxvs1/V4nCq+X8pTqy9ENig0m/Zxbjpezz959Uq8tn974raNl0uH7+gmEZ9LebT6HPuuvsQXIhuwfv+9VrX37t6xp6OW/8UfrttHU3/bZuRxGon47Oj703jctRdezkuTX+ILMVysR2v9n0pFe3ls1N6/f88mViuHvzlKIj437iA+9+zz7L0/nKMbeITIDvXOjl1++JfdizxuR4W7H4n43J+P+Kzz+fm4dl/iCzF8sIlXbDWtQdFO8dZJxCf+zZxU/+OqvsQXIrt0iR/Kz3HaE3o+AUh8IbKHO9xXfF/r+zP5vfL7BCCEyAbuLR4fEZ/4ep+W36/rp8kvhBhe3NMw+IvHfcVHeq7ru/xs9vman6gDEGK4CWV34XGXIp4qPnH5afl59f9EwycATvYJwOMfoCjK6RJ6NOi47OzX0b2nfq9+b3wCIBxT/fmiDiYABmESYEBFUYYv+Imn+Iq3FG+K+LHie7z6EyYA7wAIA3qYTRRFOd+ETuIoBRtn3eMTi+/pXQL4ROBJO0dRlP837qk76lfq3NNE/PBxPkVRHs8kvofiCyEeXyS+EBeQf8Wv2z9zZN+MAkx2+wAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'NAV Date'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="94171396-f3eb-4ffc-8f94-673c92b2563a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.amfiindia.com/nav-history-download" CvType="InputBox" DesignTimeRectangle="569, 672, 149, 33" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT dpfrom'" FullSelectorArgument="&lt;webctrl parentid='navhistorydownload' tag='TABLE' /&gt;&lt;webctrl id='dpfrom' tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='navhistorydownload' tag='TABLE' /&gt;&lt;webctrl id='dpfrom' type='text' tag='INPUT' class='datepicker hasDatepicker' aaname='' /&gt;" Guid="be3e8ea1-e84c-483e-8ebb-d6cad670a7fe" ImageBase64="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" InformativeScreenshot="d8c887431bd7755cb24f77cccb4021b0.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Net Asset Value of Mutual Funds | Nav History Download' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArgument="NAV Date" CvType="Text" DesignTimeRectangle="476, 677, 67, 23" ElementType="Text" FriendlyName="'NAV Date'" FullSelectorArgument="&lt;webctrl parentid='navhistorydownload' tag='TABLE' /&gt;&lt;webctrl id='NAVDate' tableRow='2' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='navhistorydownload' tag='TABLE' /&gt;&lt;webctrl id='NAVDate' type='' tag='LABEL' class='' aaname='' check:innerText='NAV Date' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEcAAAAbCAYAAAAu/JKTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHaSURBVFhH7ZVRbsMgDIZzxki9UJWrpEdpD9KHHINBwAZj+282rW/+JEsbBGN/kHRJgUvIAYQcQMgBhBxAyAGEHICQ87wvaVly3PZ0tLHKM21lfFnT/m5DDM0taX2Mq9CazGure92fbWCk51Shavsetpwc26sNnoBGqUmjcMonpVVoTu5DADlnbPmJX1LqNA/Cx5UjC/DkHGm/1Wc3q9n3ntaybj5tb5yh/WYJXZol3ON4rOeaf5Gz3mqyXoAjh5osm45/MyRPrqNi/QY9ORlL7Hh7W9AhsRiOXss8N99iU872mmXYcih5TXpVhP2cBMiZ50iWijrvydHjNUZBjpz8j/hgWnKMBtoaeSOcZuAVvyLHk6vnWQTvaeQwbqQvh0/YukkZ4ypzOB/mklfu4fEXOTROAeS4t61E3xPIyagkfUN61gvRPN/C/OE+562mR4AcrqnNqRPX8r4jJyPfTdoQFC9eR0Ke6udfGi9/v82Ug2rmnNz4cLNUTVqgxUc5srGaTL/DI/bGXTIuqCJl6ujS5OGNYcgZxt11Q08X5GQ4eUk8fova/IQ6zYK6/gggRx1Ir6dE2ZMa7/vLfFS3EjTlFnICScgBhBxAyAGEHEDIAYQcQMgBhByXlH4AjqBtpGJppzkAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[dateCurrent]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[DateTime.Now.AddDays(-1).ToString("dd")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ClickOCRText ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click OCR Text 'msedge.exe Net'" sap:VirtualizedContainerService.HintSize="433.6,225.6" sap2010:WorkflowViewState.IdRef="ClickOCRText_1" KeyModifiers="None" MouseButton="BTN_LEFT" Occurrence="1" Text="[dateCurrent]">
+              <ui:ClickOCRText.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:ClickOCRText.CursorPosition>
+              <ui:ClickOCRText.OCREngine>
+                <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                  <ActivityFunc.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                  </ActivityFunc.Argument>
+                  <p:UiPathScreenOCR ApiKey="{x:Null}" Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_1" Image="[Image]" Language="auto" Profile="Screen" Scale="1" Timeout="100000" />
+                </ActivityFunc>
+              </ui:ClickOCRText.OCREngine>
+              <ui:ClickOCRText.Target>
+                <ui:Target Element="{x:Null}" Selector="{x:Null}" Id="708c9f22-66be-412c-a8c5-bbd1db438e04" InformativeScreenshot="bc1965f4deb974fe0704dd01e1e08445">
+                  <ui:Target.ClippingRegion>
+                    <ui:Region Rectangle="432, 570, 403, 248" />
+                  </ui:Target.ClippingRegion>
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:ClickOCRText.Target>
+            </ui:ClickOCRText>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'A hrDownload'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="94171396-f3eb-4ffc-8f94-673c92b2563a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.amfiindia.com/nav-history-download" CvTextArgument="Go" CvType="Text" DesignTimeRectangle="742, 677, 38, 23" DesignTimeScaleFactor="1.25" FriendlyName="'A hrDownload'" FullSelectorArgument="&lt;webctrl parentid='navhistorydownload' tag='TABLE' /&gt;&lt;webctrl id='hrDownload' tableRow='2' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='navhistorydownload' tag='TABLE' /&gt;&lt;webctrl id='hrDownload' type='' tag='A' class='sprite-inter go-btn' aaname='' /&gt;" Guid="a65d34b5-abb5-4d19-b30b-ded4ad773ef9" ImageBase64="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" InformativeScreenshot="a6bd68d62c739c87f7a1f09220146a3f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Net Asset Value of Mutual Funds | Nav History Download' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="566, 671, 152, 33" CvTextArea="570, 678, 97, 16" CvTextArgument="28-Jun-2023" CvType="InputBox" DesignTimeRectangle="569, 672, 149, 33" ElementType="InputBox" FriendlyName="'28-Jun-2023'" FullSelectorArgument="&lt;webctrl parentid='navhistorydownload' tag='TABLE' /&gt;&lt;webctrl id='dpfrom' tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='navhistorydownload' tag='TABLE' /&gt;&lt;webctrl id='dpfrom' type='text' tag='INPUT' class='datepicker hasDatepicker' aaname='' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="433.6,178.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][d(ctrl)]a[u(ctrl)][u(hk)][d(hk)][d(ctrl)]c[u(ctrl)][u(hk)]" Version="V3" />
+            <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="C:\Users\Pradnya\PycharmProjects\NAV\Test.txt" sap:VirtualizedContainerService.HintSize="433.6,134.4" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[ClipboardX.UnicodeStringValue]" />
+            <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="Delay_2" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="94171396-f3eb-4ffc-8f94-673c92b2563a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="284, 9, 45, 44" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Close'" FullSelectorArgument="&lt;ctrl name='portal.amfiindia.com/DownloadNAVHistoryReport_Po.aspx?tp=1&amp;amp;frmdt*' role='pane' /&gt;&lt;ctrl name='portal.amfiindia.com/DownloadNAVHistoryReport_Po.aspx?tp=1&amp;amp;frmdt*' role='page tab' /&gt;&lt;ctrl name='Close' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='portal.amfiindia.com/DownloadNAVHistoryReport_Po.aspx?tp=1&amp;amp;frmdt*' role='pane' /&gt;&lt;ctrl name='portal.amfiindia.com/DownloadNAVHistoryReport_Po.aspx?tp=1&amp;amp;frmdt*' role='page tab' /&gt;&lt;ctrl name='Close' role='push button' automationid='' check:text='Close' /&gt;" Guid="eac168e3-c926-4934-8be2-5b64acfb3690" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADEAAAAwCAYAAAC4wJK5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIgSURBVGhD7ZltS8JgFIb7X/Uh6kuRZUVRFPVzgl5NKKLCXun1P2WJTpvzpZVmkXrqPBwV6szcs2an2AU3bmcO7ovtmdF6AqQA/4BflajWapAr2pA2c54i4ko82CWIJ9LaEXM7PZWe2YKdRNSaMK0CW/K7iJKofayRROqeLdouoiSQQvGRLdou4iTK5QpbtF3ESeBjlyvaLuIkkKRhsmWdIlICf8C4sk4JJPwikJCCawm78kanysF3id39GBwcndDeVw6PT2AvdkB7evguMTO/AH39g7C+GaVJi/VIVB2bnV+kiR6+S5jZLEzNzqmyaxubNAW1jTM8ht/xQlfWBJacmJ5RpaNb200BnHkVQDqXMNSn9sJOZzKqdG//QFMAZz9BpxI39KktgSwtryiBvg+R1Ujr1vJKV24nZGdvXwmMhCdUcDt2eERHvdEVCXyMYulQeBKSqZQKbuPs9OycvqWP7xJnF5dNgbtEgqagthsiF1fXNNXDd4mh0BgMh8IQv72lSYubeFwdGx4dp4kerhc2ndcxeOtkLYv2voKP2JRh0J4erq8EnScKdxJG8Ke4bwQSUvgXEhkzz5Z1ikgJK//AlnWKSAn70d37CpESlZdXtqxTRErU63W2rFNESiD5gs0W5iJWAjEyFlv6c0RLVKv45uj7/5CLlkDwFVg2V2TLNyJeokGpXIG7JP8+789INMDHL/6OmFbr6vw5CY5AQgYA792FDbjGxmuXAAAAAElFTkSuQmCC" InformativeScreenshot="7f2d698a97eec6552698b68d36f65b8f.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='portal.amfiindia.com/DownloadNAVHistoryReport_Po.aspx?tp=1&amp;amp;frmdt*' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="9, 9, 320, 44" ElementType="TabPage" FriendlyName="'Close'" FullSelectorArgument="&lt;ctrl name='portal.amfiindia.com/DownloadNAVHistoryReport_Po.aspx?tp=1&amp;amp;frmdt*' role='pane' /&gt;&lt;ctrl name='portal.amfiindia.com/DownloadNAVHistoryReport_Po.aspx?tp=1&amp;amp;frmdt*' role='page tab' /&gt;" FuzzySelectorArgument="&lt;ctrl name='portal.amfiindia.com/DownloadNAVHistoryReport_Po.aspx?tp=1&amp;amp;frmdt*' role='pane' /&gt;&lt;ctrl name='portal.amfiindia.com/DownloadNAVHistoryReport_Po.aspx?tp=1&amp;amp;frmdt*' role='page tab' automationid='' check:fulltext='Close' /&gt;" ImageBase64="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" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADUSURBVDhPpVJbEsIgDATO5JfH8k61hf74bcfxAo7X0FtgCAmESH3uzBZYkiUlGBPG+Bfzp8X5fkPN+X20fsA5aw3eGdRTfjCws69l+jF+XwEnE18a7K6XhjJRshuXPwphWjlNoWdgZ0heCXZwF7TK6BngGmihhaQYk+akk5KBaynKQKkLzc7CGGPkJjwafDgQxHM3Zd2EqsmcUoGlMaG0rASph5RMEqRBGrenYxuMBrkjrG2WQzGtBpIADFb6U1VMLXCyg39mLd2D3GuI7dLih3RhiA+p9J7YwbYFMAAAAABJRU5ErkJggg==" InformativeScreenshot="219b3a918ef6df4f31d3085ff42eddad.jpg" Selector="&lt;html app='chrome.exe' title='Net Asset Value of Mutual Funds | Nav History Download' /&gt;" Title="Net Asset Value of Mutual Funds | Nav History Download" Url="https://www.amfiindia.com/nav-history-download" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
