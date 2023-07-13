@@ -113,20 +113,50 @@
       
     }
 
+    .dashboard-graph-buttons
+    {
+      background-color:white;
+      color: #1c509d;
+      border: 0;
+      margin-left: 5px;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+
+    .dashboard-graph-buttons:hover
+    {
+      border: 1px solid lightgray;
+    }
+
+    .performance-details-link
+    {
+      padding-left: 25px;
+      text-decoration: none;
+      color: #1c509d;
+      font-weight:700;
+    }
+
+    .performance-details-link:hover
+    {
+      text-decoration: underline;
+    }
+
 
     
   </style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 
 
 
-<body style=" padding-top:60px; display:flex;justify-content: center;height: 3000px;">
+<body style=" padding-top:60px; display:flex;justify-content: center;height: 1000px;">
 
 <div class="header">
   Mutual Fund Analytics
 </div>
 
-<div style="display: grid;grid-template-rows: 220px 2780px;">
+<div style="display: grid;grid-template-rows: 220px 780px;">
   <div style="display: grid;grid-template-columns: 154px 1210px 155px;padding-top: 8px;">
     <div class="summary-box-whitespace"></div>
 
@@ -203,41 +233,30 @@
   
   
   <div style="background-color: beige;height: 100%;margin-top: 70px;display:flex;justify-content: center;">
-  <div style="margin-top: 70px;background-color: white; height:280px; width: 1210px;border-radius: 12px; ">
-    <table style="width: 100%;">
-      <tr>
-        <th>Fund Name</th>
-        <th>ISIN</th>
-        <th>Last NAV</th>
-        <th>Total Cost</th>
-        <th>Current Value</th>
-        <th>Units</th>
-        <th>Total Returns</th> 
-      </tr>
+    <div style="margin-top: 70px;background-color: white; height:446px; width: 798px;border-radius: 12px;margin-right: 20px; ">
+      <h1 style="padding-left: 25px;font-size:20px;font-weight: 300;">Performance</h1>
+      <div style="display: flex;justify-content: left;padding-left: 20px;">
+        <button class="dashboard-graph-buttons">ALL TIME</button>
+        <button class="dashboard-graph-buttons">1M</button>
+        <button class="dashboard-graph-buttons">3M</button>
+        <button class="dashboard-graph-buttons">6M</button>
+        <button class="dashboard-graph-buttons">1Y</button>
+        <button class="dashboard-graph-buttons">5Y</button>
+        <button class="dashboard-graph-buttons">7Y</button>
+      </div>
+      <canvas id="DashboardChart" style="width:100%;max-height: 350px;"></canvas>
+      <a href="MutualFund_Performance.html" class="performance-details-link">Performance Details ></a>
+    </div>
 
-      <tr >
-        <td>AXIS</td>
-        <td>ISIN2023004</td>
-        <td>3000.2</td>
-        <td>400000000</td>
-        <td>2000.567</td>
-        <td>3</td>
-        <td>5000000</td> 
-      </tr>
+    <script>
+      let xValues = [50,60,70,80,90,100,110,120];
+      let yValues = [7,8,8,9,9,9,10,11];
+      new Chart("DashboardChart", {type: "line",data: {labels: xValues,datasets: [{borderColor:"rgba(28, 80, 157, 1.0)",data: yValues}]}});
+    </script>
 
-      <tr >
-        <td>AXIS</td>
-        <td>ISIN2023004</td>
-        <td>3000.2</td>
-        <td>400000000</td>
-        <td>2000.567</td>
-        <td>3</td>
-        <td>5000000</td> 
-      </tr>
-
-
-    </table>
-  </div>
+    <div style="margin-top: 70px;background-color: white; height:446px; width: 388px;border-radius: 12px; ">
+      <h1 style="padding-left: 25px;font-size:20px;font-weight: 300;">Transactions</h1>
+    </div>
   </div>
 </div>
 
