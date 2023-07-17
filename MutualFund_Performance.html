@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> VR Clone </title>
+  <style>
+    .summary-box
+    {
+      height:220px; 
+      background-color: beige; 
+      padding-top:5px; 
+      width:1210px; 
+      display:grid;
+      grid-template-rows: 70px 70px 80px;
+
+    }
+
+    .summary-box-whitespace
+    {
+      height:220px; 
+      background-color: white; 
+      padding-top:5px;  
+    }
+
+    .investor-name
+    { 
+      padding-left: 20px;
+      width: 100%;
+      font-weight: 500;
+      font-size: 40px;
+    }
+
+    .header
+    {
+      display:flex; 
+      flex-direction: row; 
+      background-color: #1c509d; 
+      position:fixed; 
+      top:0; 
+      right:0; 
+      left:0; 
+      height:60px;
+      color: white;
+      font-size: 35px;
+      padding-left: 175px;
+      padding-top: 15px;
+    }
+
+    .blue-dropdown
+    {
+      background-image: url("Blue-dropdown-arrow.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      border-radius: 100%;
+      height: 24px;
+      width:24px;
+      background-color: white;
+      border: 0;
+    }
+
+    .blue-dropdown:hover
+    {
+      opacity: 85%;
+    }
+
+    .more-features
+    {
+      height: 40px; 
+      background-color: #1c509d; 
+      color: white; 
+      width:200px;
+      font-weight: 700; 
+      font-size: larger; 
+      border-radius: 8px;
+    }
+
+    .more-features:hover
+    {
+      opacity: 85%;
+    }
+
+    .change-investor
+    {
+      padding-top:15px; 
+      width: 1210px; 
+      padding-bottom: 10px; 
+      top:50px;
+      display: grid;
+      grid-template-columns: 370px 320px 500px;
+    }
+
+    .dashboard-links
+    {
+      background-color: beige;
+      border:0;
+      height: 30px;
+      color: black;
+      text-decoration: none;
+    }
+
+    .dashboard-links:hover
+    {
+      text-decoration: underline;
+    }
+
+    td,th
+    {
+      text-align: center;
+      border-bottom: 1px solid lightgray;
+      border-collapse: collapse;
+      padding-top: 25px;
+      
+    }
+
+    .dashboard-graph-buttons
+    {
+      background-color:white;
+      color: #1c509d;
+      border: 0;
+      margin-left: 5px;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+
+    .dashboard-graph-buttons:hover
+    {
+      border: 1px solid lightgray;
+    }
+
+    .performance-details-link
+    {
+      padding-left: 25px;
+      text-decoration: none;
+      color: #1c509d;
+      font-weight:700;
+    }
+
+    .performance-details-link:hover
+    {
+      text-decoration: underline;
+    }
+
+
+    
+  </style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+
+
+
+<body style=" padding-top:60px; display:flex;justify-content: center;height: 1000px;">
+
+<div class="header">
+  Mutual Fund Analytics
+</div>
+
+<div style="display: grid;grid-template-rows: 220px 780px;">
+  <div style="display: grid;grid-template-columns: 154px 1210px 155px;padding-top: 8px;">
+    <div class="summary-box-whitespace"></div>
+
+    <div class="summary-box" >
+      <div class="investor">
+        <div class="dropdown">
+          <select id="investor-list" class="investor-name">
+            <option value="default" >Investor Name</option>
+            <option value="RDA" >Raghunandan Apte</option>
+            <option value="SRA" >Sonali Apte</option>
+          </select>
+          <div class="dropdown-arrow-image"></div>
+        </div>
+
+        <div style=" text-align: right;width:500px;padding-right: 20px;padding-top: 5px;padding-left: 300px;">
+          <button class="more-features">
+            More Features
+            </button>
+        </div>
+      </div>
+    
+      <div style="display:grid;grid-template-columns: 605px 605px;margin-top: 10px;">
+        <div style="display: grid;grid-template-rows: 20px 50px ;">
+          <div style="font-size: 15px;color: gray;font-weight: 500;padding-top: 5px;padding-left: 20px;">
+            CURRENT VALUE
+          </div>
+          <div style=" padding-left: 20px;">
+            <p style="display: inline-block;font-size: 35px;font-weight: 500;margin: 0;">
+              &#8377 3.60 Lakh
+            </p>
+            <p style="display: inline-block;font-size: 20px;font-weight: 300;margin: 0;padding-left: 10px;">
+              &#8377 1.76 Lakh Invested
+            </p>
+          </div>
+        </div>
+    
+        <div style="display: grid;grid-template-rows: 20px 50px ;">
+          <div style="font-size: 15px;color: gray;font-weight: 500;padding-top: 5px;padding-left: 20px;">
+            ALL-TIME RETURNS
+          </div>
+          <div style=" padding-left: 20px;">
+            <p style="display: inline-block;font-size: 35px;font-weight: 500;margin: 0;color: green;">
+              &#8377 +1.97 Lakh
+            </p>
+            <p style="display: inline-block;font-size: 20px;font-weight: 300;margin: 0;padding-left: 10px;color: green;">
+              11.9 % p.a.
+            </p>
+          </div>
+        </div>
+    
+      </div>
+    
+      <div style="padding-left: 20px;">
+        <div style="padding-top: 45px;display: inline-block;">
+          <a class="dashboard-links" href="MutualFund_Dashboard.html">Dashboard</a>
+        </div>
+    
+        <div style="padding-top: 45px;display: inline-block;padding-left: 10px;">
+          <a class="dashboard-links" href="MutualFund_Overview.html">Overview</a>
+        </div>
+    
+        <div style="padding-top: 45px;display: inline-block;margin-left: 10px;border-bottom:2px solid #1c509d ;padding-bottom: 14px;">
+          <a class="dashboard-links" href="MutualFund_Performance.html" style="color: #1c509d;font-weight: 600;">Performance</a>
+        </div>
+    
+        <div style="padding-top: 45px;display: inline-block;padding-left: 10px;">
+          <a class="dashboard-links" href="MutualFund_Analysis.html">Analysis</a>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="summary-box-whitespace"></div>
+  </div>
+  
+  
+  <div style="background-color: beige;height: 100%;margin-top: 70px;display:flex;justify-content: center;">
+    <div style="margin-top: 70px;background-color: white; height:446px; width: 1210px;border-radius: 12px;margin-right: 20px; ">
+        <h1 style="padding-left: 25px;font-size:20px;font-weight: 300;">Performance Graph</h1> 
+        <canvas id="PerformanceGraph" style="max-height: 350px;"></canvas>
+    </div>
+    <script>
+      let xValues = [50,60,70,80,90,100,110,120];
+      let yValues = [7,8,8,9,9,9,10,11];
+      new Chart("PerformanceGraph", {type: "line",data: {labels: xValues,datasets: [{borderColor:"rgba(28, 80, 157, 1.0)",data: yValues}]}});
+    </script>
+
+    
+  </div>
+</div>
+
+
+</body>
+</html>

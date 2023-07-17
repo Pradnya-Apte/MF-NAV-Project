@@ -1,0 +1,36 @@
+.dashboard-graph-buttons
+{
+    background-color:white;
+    color: #1c509d;
+    border: 0;
+    margin-left: 5px;
+    border-radius: 4px;
+    font-weight: 550;
+    padding-left: 4px;
+    border: 1px solid white;
+}
+
+.dashboard-graph-buttons:hover
+{
+    border: 1px solid lightgray;
+}
+
+.dashboard-graph-buttons:focus, dashboard-graph-buttons:focus ~ button 
+{
+    border:1px solid #1c509d;
+}
+
+.performance-details-link
+{
+    padding-left: 25px;
+    text-decoration: none;
+    color: #1c509d;
+    font-weight:700;
+}
+
+.performance-details-link:hover
+{
+    text-decoration: underline;
+}
+
+

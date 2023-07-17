@@ -1,0 +1,149 @@
+.summary-box
+{
+    height:220px; 
+    background-color: beige; 
+    padding-top:5px; 
+    width:1210px; 
+    display:grid;
+    grid-template-rows: 70px 70px 80px;
+
+}
+
+.summary-box-whitespace
+{
+    height:220px; 
+    background-color: white; 
+    padding-top:5px;  
+}
+
+.investor-name
+{ 
+    padding-left: 50px;
+    font-weight: 300;
+    font-size: 35px;
+    font-family: 'Times New Roman';
+}
+
+
+.header
+{
+    display:flex; 
+    flex-direction: row; 
+    background-color: #1c509d; 
+    position:fixed; 
+    top:0; 
+    right:0; 
+    left:0; 
+    height:60px;
+    color: white;
+    font-size: 35px;
+    padding-left: 175px;
+    padding-top: 15px;
+    z-index: 100;
+}
+
+/* .arrow-dropdown
+{
+    background-image: url("Blue-dropdown-arrow.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 100%;
+    height: 24px;
+    width:24px;
+    background-color: white;
+    border: 0;
+}
+
+.arrow-dropdown:hover
+{
+    opacity: 80%;
+} */
+
+.more-features
+{
+    height: 40px; 
+    background-color: #1c509d; 
+    color: white; 
+    width:200px;
+    font-weight: 700; 
+    font-size: larger; 
+    border-radius: 8px;
+}
+
+.more-features:hover
+{
+    opacity: 85%;
+}
+
+.investor
+{
+    padding-top:15px; 
+    width: 1210px; 
+    padding-bottom: 10px; 
+    top:50px;
+    display: grid;
+    grid-template-columns: 370px 320px 500px;
+}
+
+.main-links
+{
+    background-color: beige;
+    border:0;
+    height: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+.main-links:hover
+{
+    text-decoration: underline;
+}
+
+.dropdown 
+{
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown select
+{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 8px;
+    border: none;
+    background-color: beige;
+    cursor: pointer;
+    z-index: 1; /* Ensure the select element is above the image  */
+    padding-left: 20px;
+    width:400px;
+    outline: none;
+    font-size: 35px;
+  
+}
+
+.dropdown-arrow-image
+{
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    background-image: url(Blue-dropdown-arrow.png); /* Specify the path to your arrow image */
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none; /* Allow the click events to pass through the image*/
+    border-radius: 100%;
+    height: 24px;
+    width:24px;
+}
+
+
+
+
+
+
+
+
+
+    

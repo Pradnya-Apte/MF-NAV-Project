@@ -3,149 +3,17 @@
 
 <head>
   <title> VR Clone </title>
-  <style>
-    .summary-box
-    {
-      height:220px; 
-      background-color: beige; 
-      padding-top:5px; 
-      width:1210px; 
-      display:grid;
-      grid-template-rows: 70px 70px 80px;
-
-    }
-
-    .summary-box-whitespace
-    {
-      height:220px; 
-      background-color: white; 
-      padding-top:5px;  
-    }
-
-    .investor-name
-    { 
-      padding-left: 20px;
-      width: 100%;
-      font-weight: 500;
-      font-size: 40px;
-    }
-
-    .header
-    {
-      display:flex; 
-      flex-direction: row; 
-      background-color: #1c509d; 
-      position:fixed; 
-      top:0; 
-      right:0; 
-      left:0; 
-      height:60px;
-      color: white;
-      font-size: 35px;
-      padding-left: 175px;
-      padding-top: 15px;
-    }
-
-    .blue-dropdown
-    {
-      background-image: url("Blue-dropdown-arrow.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      border-radius: 100%;
-      height: 24px;
-      width:24px;
-      background-color: white;
-      border: 0;
-    }
-
-    .blue-dropdown:hover
-    {
-      opacity: 85%;
-    }
-
-    .more-features
-    {
-      height: 40px; 
-      background-color: #1c509d; 
-      color: white; 
-      width:200px;
-      font-weight: 700; 
-      font-size: larger; 
-      border-radius: 8px;
-    }
-
-    .more-features:hover
-    {
-      opacity: 85%;
-    }
-
-    .change-investor
-    {
-      padding-top:15px; 
-      width: 1210px; 
-      padding-bottom: 10px; 
-      top:50px;
-      display: grid;
-      grid-template-columns: 370px 320px 500px;
-    }
-
-    .dashboard-links
-    {
-      background-color: beige;
-      border:0;
-      height: 30px;
-      color: black;
-      text-decoration: none;
-    }
-
-    .dashboard-links:hover
-    {
-      text-decoration: underline;
-    }
-
-    td,th
-    {
-      text-align: center;
-      border-bottom: 1px solid lightgray;
-      border-collapse: collapse;
-      padding-top: 25px;
-      
-    }
-
-    .dashboard-graph-buttons
-    {
-      background-color:white;
-      color: #1c509d;
-      border: 0;
-      margin-left: 5px;
-      border-radius: 4px;
-      font-weight: 700;
-    }
-
-    .dashboard-graph-buttons:hover
-    {
-      border: 1px solid lightgray;
-    }
-
-    .performance-details-link
-    {
-      padding-left: 25px;
-      text-decoration: none;
-      color: #1c509d;
-      font-weight:700;
-    }
-
-    .performance-details-link:hover
-    {
-      text-decoration: underline;
-    }
-
-
-    
-  </style>
+  <link rel="stylesheet" href="https://unpkg.com/js-datepicker/dist/datepicker.min.css">
+  <link rel="stylesheet" type="text/css" href="common-styles.css">
+  <link rel="stylesheet" type="text/css" href="dashboard.css">
+  <link rel="stylesheet" href="https://unpkg.com/js-datepicker/dist/datepicker.min.css">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+<style>
+
+  
+</style>
 </head>
 
 
@@ -161,21 +29,38 @@
     <div class="summary-box-whitespace"></div>
 
     <div class="summary-box" >
-      <div class="change-investor">
-        <div class="investor-name">
-          Investor Name Demo
+      <div class="investor">
+        <div class="dropdown">
+          <select id="investor" class="investor-name">
+            <option value="default" >Investor Name</option>
+            <option value="RDA" >Raghunandan Apte</option>
+            <option value="SRA" >Sonali Apte</option>
+          </select>
+          <div class="dropdown-arrow-image"></div>
+          
         </div>
-    
-        <div style="padding-left: 10px; width: 100%;padding-top: 14px;" >
-          <button class="blue-dropdown"></button>
-        </div>
-    
-        <div style=" text-align: right;width:500px;padding-right: 20px;padding-top: 5px;">
-          <button class="more-features">
+        
+
+        <div style=" text-align: right;width:500px;padding-right: 20px;padding-top: 5px;padding-left: 300px;">
+          <button class="more-features" id="test-button">
             More Features
             </button>
         </div>
       </div>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function() 
+        {
+          function get_investor() 
+          {
+            var myval = document.getElementById("investor").value;
+            console.log(myval);
+          }
+      
+          var button = document.getElementById("test-button");
+          button.addEventListener("click", get_investor);
+        });
+      </script>
     
       <div style="display:grid;grid-template-columns: 605px 605px;margin-top: 10px;">
         <div style="display: grid;grid-template-rows: 20px 50px ;">
@@ -209,20 +94,20 @@
       </div>
     
       <div style="padding-left: 20px;">
-        <div style="padding-top: 45px;display: inline-block;">
-          <a class="dashboard-links" href="MutualFund_Dashboard.html">Dashboard</a>
+        <div style="padding-top: 45px;display: inline-block;border-bottom:2px solid #1c509d ;padding-bottom: 14px;">
+          <a class="main-links" href="MutualFund_Dashboard.html" style="color: #1c509d;font-weight: 600;">Dashboard</a>
         </div>
     
         <div style="padding-top: 45px;display: inline-block;padding-left: 10px;">
-          <a class="dashboard-links" href="MutualFund_Overview.html">Overview</a>
+          <a class="main-links" href="MutualFund_Overview.html">Overview</a>
         </div>
     
         <div style="padding-top: 45px;display: inline-block;padding-left: 10px;">
-          <a class="dashboard-links" href="MutualFund_Performance.html">Performance</a>
+          <a class="main-links" href="MutualFund_Performance.html">Performance</a>
         </div>
     
         <div style="padding-top: 45px;display: inline-block;padding-left: 10px;">
-          <a class="dashboard-links" href="MutualFund_Analysis.html">Analysis</a>
+          <a class="main-links" href="MutualFund_Analysis.html">Tax</a>
         </div>
         
       </div>
@@ -236,30 +121,34 @@
     <div style="margin-top: 70px;background-color: white; height:446px; width: 798px;border-radius: 12px;margin-right: 20px; ">
       <h1 style="padding-left: 25px;font-size:20px;font-weight: 300;">Performance</h1>
       <div style="display: flex;justify-content: left;padding-left: 20px;">
-        <button class="dashboard-graph-buttons">ALL TIME</button>
-        <button class="dashboard-graph-buttons">1M</button>
-        <button class="dashboard-graph-buttons">3M</button>
-        <button class="dashboard-graph-buttons">6M</button>
-        <button class="dashboard-graph-buttons">1Y</button>
-        <button class="dashboard-graph-buttons">5Y</button>
-        <button class="dashboard-graph-buttons">7Y</button>
+        <button class="dashboard-graph-buttons" onclick="showGraph('ALLTIME')">ALL TIME</button>
+        <button class="dashboard-graph-buttons" onclick="showGraph('1Y')">1Y</button>
+        <button id="customDate" class="dashboard-graph-buttons" onclick="custom()">CUSTOM</button>
       </div>
-      <canvas id="DashboardChart" style="width:100%;max-height: 350px;"></canvas>
+
+      <canvas id="DashboardPerformanceChart" style="width:100%;max-height: 350px;" class="view active-view"></canvas>
+      
       <a href="MutualFund_Performance.html" class="performance-details-link">Performance Details ></a>
     </div>
+    <script src="dashboard-graph.js"></script>
+    
 
-    <script>
-      let xValues = [50,60,70,80,90,100,110,120];
-      let yValues = [7,8,8,9,9,9,10,11];
-      new Chart("DashboardChart", {type: "line",data: {labels: xValues,datasets: [{borderColor:"rgba(28, 80, 157, 1.0)",data: yValues}]}});
-    </script>
+
 
     <div style="margin-top: 70px;background-color: white; height:446px; width: 388px;border-radius: 12px; ">
       <h1 style="padding-left: 25px;font-size:20px;font-weight: 300;">Transactions</h1>
+      <canvas id="DashboardTransactionChart" style="width:100%;height: 375px;"></canvas>
+      <!-- <a href="MutualFund_Performance.html" class="performance-details-link">Performance Details ></a> -->
     </div>
+    <script>
+      let x = ["FY-20","FY-21","FY-22"];
+      let y = [21,42,84];
+      new Chart("DashboardTransactionChart", {type: "bar",data: {labels: x,datasets: [{backgroundColor:"rgba(28, 80, 157, 1.0)",data: y}]}});
+    </script>
   </div>
 </div>
 
+<script src="https://unpkg.com/js-datepicker"></script>
 
 </body>
 </html>
